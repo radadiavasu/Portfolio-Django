@@ -1,0 +1,33 @@
+{% load static %}
+<div class="rn-skill-area section-height">
+    <div class="inner slide">
+        <h5 class="title">
+            About My Skill
+        </h5>
+        <div class="skill-share-inner pt--100">
+            <span class="title">Primary Skills on</span>
+            <ul class="skill-share d-flex liststyle">
+
+                {% for skill in skill1 %}
+                <li><img src="{{skill.icon.url}}" alt="{{skill.name}}"></li>
+                {% endfor %}
+                {% comment %} <li><img src="{% static 'assets/images/icons/icons-05.png' %}" alt="Icons Images"></li>
+                <li><img src="{% static 'assets/images/icons/icons-06.png' %}" alt="Icons Images"></li>
+                <li><img src="{% static 'assets/images/icons/icons-07.png' %}" alt="Icons Images"></li>
+                <li><img src="{% static 'assets/images/icons/icons-08.png' %}" alt="Icons Images"></li>
+                <li><img src="{% static 'assets/images/icons/icons-09.png' %}" alt="Icons Images"></li>
+                <li><img src="{% static 'assets/images/icons/icons-10.png' %}" alt="Icons Images"></li> {% endcomment %}
+            </ul>
+        </div>
+        <div class="skill-share-inner skill-share-inner-width margin-top-25">
+            <span class="title">Secondary Skills on</span>
+            <ul class="skill-share d-flex liststyle">
+
+                {% for skill in skill2 %}
+                <li><img src="{{skill.icon.url}}" alt="{{skill.name}}"></li>
+                {% endfor %}
+
+            </u1>
+        </div>
+    </div>
+</div>
